@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="ro">
+<head>
+
+
+<title> Pacmanul Website
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="nav_media.css">
+<link rel="stylesheet" type="text/css" href="slideshowauto.css">
+<link rel="stylesheet" type="text/css" href="columns.css">
+<link rel="stylesheet" type="text/css" href="butondrop.css">
+<meta charset="UTF-8">
+
+</head>
+<body >
+<div class="topnav">
+
+
+  <div class="topnav-centered">
+    <a href="indexwb.html" class="active"><img class="logo" alt="Home_Button" src="logo.png"  width="80"></a>
+  </div>
+  <a href="element.html">Jocuri</a>
+  <a href="#news">Muzica</a>
+  <a href="#news">Filme</a>
+  
+
+  <div class="topnav-right">
+	<a href="news.html">News</a>
+    <a href="events.html">Events</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+
+
+
+<div style="text-align:center">
+<div class="row">
+  <div class="column" style="background-color:#c934eb;">
+    <h2>DeadCells</h2>
+    	<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="dcfront.jpg" alt="1" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="dcelem2.jpg" alt="2"  style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="dcelem.jpg" alt="3" style="width:100%">
+  <div class="text"></div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</div>
+  </div>
+  <div class="column" style="background-color:#cd60e6;">
+    <h2>Generalitati</h2>
+    <p>Ieșit din Early Access cu un succes răsunător, Dead Cells combină cele mai bune elemente din jocuri clasice precum Castlevania, Dark Souls, până și clasicul Rogue. Vei parcurge numeroase nivele pline de pericol în rolul unei entități capabilă să posede războinici căzuți și să mânuiască o varietate de arme, plus câteva puteri speciale ce pot fi colectate pe parcursul diverselor nivele neliniare și generate aleator ale jocului. Veți avea parte de acțiune fluidă foarte, de ceva platforming și de o poveste la care moartea este doar un mod prin care poți merge mai departe.</p>
+	<div class="divcutie">
+		Marius,Romania: Cel mai bun joc incercat vreodata, combat bun, reactii diferite in functie de mobi, arme multiple, recomand. <3
+		<br>
+		Ioan, FMI: Este jocul meu preferat inainte, dupa si in timpul sesiuni, mai ales inainte de lucrurile mai grele il recomand 24/7 :3 	
+	</div>
+	<div class="dropdown">
+  <button class="dropbtn">Cumpara</button>
+  <div class="dropdown-content">
+  <a href="#">Steam</a>
+  <a href="#">G2A</a>
+  <a href="#">Kinguin</a>
+  </div>
+</div>
+  
+  </div>
+</div>
+
+
+</div>
+
+</body>
+</html>
+
+

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<title>
+Pacmanul
+</title>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="imagelement.css">
+<link rel="stylesheet" type="text/css" href="nav_media.css">
+<link rel="stylesheet" type="text/css" href="grid.css">
+<link rel="stylesheet" type="text/css" href="slideshow.css">
+<link rel="stylesheet" type="text/css" href="news.css">
+<link rel="stylesheet" type="text/css" href="news.css">
+
+
+</head>
+<body>
+<div class="topnav">
+
+
+  <div class="topnav-centered">
+    <a href="indexwb.html" class="active"><img class="logo" alt="Home-But" src="logo.png" width="80"></a>
+  </div>
+  <a href="element.html">Jocuri</a>
+  <a href="#news">Muzica</a>
+  <a href="#news">Filme</a>
+  
+
+  <div class="topnav-right">
+	<a href="news.html">News</a>
+    <a href="events.html">Events</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+<div style="margin-left:auto; margin-right:auto;text-align:center">
+<div class="grid-container1">
+  <div class="itemh">Cyberpunk</div>
+  <div class="itemmai">Cyberpunk 2077 este un joc de tip RPG de la creatorii seriei The Witcher. Actiunea jocului se desfasoara in lumea creata de Mike Pondsmith, unul dintre parintii genului cyberpunk si creatorul de cult-clasic RPG.
+ Inca din gameplay urile oferite la E3 jocul a fost adoptat de public ca fiind unul dintre cele mai asteptate titluri din industria de gaming. Prezentat de Keanu Reeves care, dupa parerea noastra
+ a omorat publicul cu felul in care si-a prezentat aparitia in cadrul titlului.In urmatoarele zile o sa primim tot mai multe informatii dar pana atunci pastrati un ochi pe pagina noastra de social media si pe anunturile de la CD RedProjekt</div>  
+  <div class="itemr">
+  
+	<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="cb.jpg" alt="1" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="cb1.jpg" alt="2"  style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="cb2.jpg" alt="3" style="width:100%">
+  <div class="text"></div>
+</div>
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+  </div>
+  <div class="itemlee">
+  <img src="cb3.png" alt="left" width="400">
+  
+  </div> 
+  <div class="itemdown">Atmosfera cyberpunk, cunoscuta din romanele lui William Gibson, filmul "Blade Runner" si celebrul joc "Cyberpunk 2020", vor inconjura jucatorul. 
+  Creatorii promit ca "Cyberpunk 2077" va fi esenta genului cyberpunk. 
+  Jucatorii vor fi aruncati in viitorul intunecat al anului 2077 si intr-o lume in care tehnologiile avansate au devenit ceva normal.<br>
+  Data aparitiei pe piata din Romania o sa fie 17 Septembrie 2020.
+</div>
+<div class="iteml">Jocul este first person și se comportă ca un shooter precum Call of Duty sau Battlefield, dar are multe elemente de RPG care decid felul în care joci Cyberpunk 2077. Mai departe, în demo vedem cum acțiunea se intensifică și începe o sesiune de împușcături.</div> 
+</div>
+</div>			
+</div>
+
+
+
+<div style="margin-left:auto; margin-right:auto;text-align:center">
+<div class="grid-container1">
+  <div class="itemh">Godzilla</div>
+  <div class="itemmai">
+	Piesa de pe noul album al lui Eminem a reusit sa ajunga la 94 milioane de vizualizari pe youtube in doar 3 saptamani de la postarea acesteia pe pagina de video content.Una dintre preferatele noastre am putea spune
+	fara vreo urma de nesinceritate, dar va lasam si pe voi sa o ascultati si sa ne trimiti opiniile voastre pe mail/facebook.
+	
+  </div>  
+  <div class="itemr">
+  
+</div>
+  <div class="itemlee">
+  <img src="eminem.png" alt="left" width="400">
+  
+  </div> 
+  <div class="itemdown">Godzilla este unul dintre cele mai mari hit-uri ale lui Eminem in acest moment, in noul sau album "Music to be Murdered by", dupa ce acesta si-a provocat fanii la "Godzilla 
+  Challenge, acesta a posta varinta video la piesa pe youtube</div>
+<div class="iteml">Fanii adora comeback-ul facut de Eminem cu aceasta piesa dupa ce mai multi fani au declarat ca Eminem s-a schimbat!Suntem curiosi cu ce o sa ne surprinda artistul pe viitor si cum o sa se descurce cu multimea de fani 
+pe care acesta i-a obtinut cu noua sa piesa.Keep it going,Eminem, si multa succes in continuare din partea noastra si a fanilor romani</div>
+</div>
+</div>			
+</body>
+</html>
